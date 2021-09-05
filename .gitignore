@@ -1,2 +1,6 @@
-*.c/whiletest/*
-*.exe/whiletest/*
+tic_tac_toe.py
+
+whiletest.c
+
+#ignore exe files
+*.exe
