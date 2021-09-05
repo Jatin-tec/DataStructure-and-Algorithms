@@ -1,5 +1,1 @@
-
-    for (int i = low; i <= high; i++)
-    {
-        Ar[i]=output[i];
-    }
+10, 7, 21 , 22, 23, 24, 2, 0
