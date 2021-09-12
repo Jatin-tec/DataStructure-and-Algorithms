@@ -1,1 +1,0 @@
-Arr[largest]<Arr[left]
