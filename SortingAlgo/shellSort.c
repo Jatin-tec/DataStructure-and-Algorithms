@@ -40,12 +40,9 @@ int main(){
     int size = sizeof(Ar)/sizeof(int);
 
     printf("Before sort \n");
-    
     Print(Ar, size);
     
     printf("\nAfter sort \n");
-
     shellSort(Ar, size);
-
     Print(Ar, size);
 }
