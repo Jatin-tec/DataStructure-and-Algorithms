@@ -1,9 +1,9 @@
 Alpa = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-Array = [1, 2, 2, 1] #  ADB, NB
+Array = [1, 2, 2, 1] #  ABBA, NB
 Pair = []
 
-i=0
+
 for i in range(len(Array)-1):
     num = int(str(Array[i])+str(Array[i+1]))  
     Combo = []  

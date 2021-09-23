@@ -1,6 +1,6 @@
 Alpa = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-Array = [1, 2, 2, 1] #  ADB, NB
+Array = [1, 2, 2] #  ADB, NB
 Pair = []
 
 i=0
@@ -20,6 +20,7 @@ for i in range(len(Array)-1):
             Pair.append(Combo)
 
 double = []
+
 i=0
 while i < len(Array)-1:
     pairs = int(str(Array[i])+str(Array[i+1]))

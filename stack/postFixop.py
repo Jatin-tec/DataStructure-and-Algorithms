@@ -15,4 +15,4 @@ def result(elements):
     return List.pop()        
 
 
-print(result('12+34*-2'))    
+print(result('12+34*-'))    
