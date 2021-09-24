@@ -16,7 +16,8 @@ for i in range(len(Array)-1):
         else:
             Combo.append(num)
             j += 2
-        if Combo not in Pair:    
+        if Combo not in Pair:   
+            print(Pair) 
             Pair.append(Combo)
 
 double = []
