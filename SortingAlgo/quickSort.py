@@ -1,8 +1,8 @@
-Arr = [31, 34, 23, 19, 10, 41, 8, 44, 16, 33, 39, 5, 30, 45, 12, 7, 25, 40, 3, 15, 38, 37, 21, 22, 13, 20, 32, 43, 49, 36, 47, 1, 24, 18, 28, 48, 42, 46, 0, 17, 2, 9, 29, 11, 14, 6, 35, 4, 26, 27]
+Array = [100, 3, 42, 1, 3123, 212]
 
 def QuickSort(Arr, Lb, Ub):
 
-    if Lb<Ub:
+    if Lb<=Ub:
         
         #invoking Partition, it will take first element of given Array as piviot and place it in its position in sorted array
         sortedIndex = Partition(Arr, Lb, Ub) 
@@ -28,17 +28,19 @@ def Partition(Arr, Lb, Ub):
         
         #searching for a value bigger than pivot 
         #incrementing until we find one
+        print(bigger)
         while(Arr[bigger]<=pivot):
             bigger += 1
         
         #searching for a value smaller than pivot 
         #decrementing until we find one
-        while(Arr[smaller]>pivot):
+        print(smaller)
+        while(Arr[smaller]>=pivot):
             smaller -= 1    
 
         # to check if smaller and bigger value are in place
         # smaller must be in left and vice versa 
-        if(smaller>bigger):
+        if(bigger<smaller):
             Arr[bigger], Arr[smaller] = Arr[smaller], Arr[bigger]
     
     #swapping current value of smaller with pivot
@@ -49,9 +51,9 @@ def Partition(Arr, Lb, Ub):
     return smaller
 
 print('Array before sort')
-print(Arr)
+print(Array)
 
-QuickSort(Arr, 0, len(Arr)-1)    
+QuickSort(Array, 0, (len(Array)-1))    
 
 print('Array after sort')
-print(Arr)
+print(Array)

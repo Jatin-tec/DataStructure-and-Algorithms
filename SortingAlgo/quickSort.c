@@ -66,16 +66,13 @@ void QuickSort(int *Ar, int low, int high)
 int main()
 {
 
-    int Ar[] = {10, 7, 23, 13, 22, 53};
+    int Ar[] = {100, 3, 42, 1, 23, 2};
     int size = sizeof(Ar) / sizeof(int);
 
     printf("Before sort \n");
-
     Print(Ar, size);
 
     printf("\nAfter sort \n");
-
     QuickSort(Ar, 0, size - 1);
-
     Print(Ar, size);
 }

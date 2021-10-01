@@ -37,22 +37,19 @@ def isValid(elem):
     return 0    
 
 def result(item):
-    
     AlpaList=''
     for index in item:
-        AlpaList += str(Alpa[index])
-    
+        AlpaList += str(Alpa[index]) 
     print(AlpaList)  
 
-
 #printing result
-result(Array)
+result(Array) #Case:1
 
-for item in Pair:
+for item in Pair: #Case:2
     if isValid(item):
         result(item)
 
-if isValid(double):
+if isValid(double): #Case:3
     if len(double)>1:
         result(double)
 
