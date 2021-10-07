@@ -3,6 +3,9 @@ def hepify(Arr, length, root):
     left = root*2+1
     right = root*2+2
 
+    if left<length and right<length and Arr[left]>Arr[right]:
+        Arr[left], Arr[right] = Arr[right], Arr[left]
+        left, right = right, left
 
     if left<length and Arr[left]<Arr[minn]:
         print("here")
@@ -35,8 +38,9 @@ def delete(Arr, value):
 
 if __name__ == '__main__':
     queue = []
+    # innsert(queue, 5)
+    # innsert(queue, 4)
     innsert(queue, 3)
     innsert(queue, 2)
     innsert(queue, 1)
     print(queue)
-    # innsert(queue, 1)
